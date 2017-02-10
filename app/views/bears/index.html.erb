@@ -1,7 +1,8 @@
-<h1 class='jumbotron'>Ted's Battle Bear Emporium</h1>
+
 
 
 <% if current_page?('/')%>
+<h1 class='jumbotron'>Ted's Battle Bear Emporium</h1>
 <h2>Welcome To A Terrfiying New Age</h2>
 <p>When people people first dreamt of war in the far flung future, they probably imagined it being like those of walking tanks of distruction in seen in the fictional BattleTech world, or perhaps more like the mobile suits, from every Mecha Anime in existence.  But instead of that, we got these crazy bear-like machines called Battle Bears.(We blame the Russians)</p>
 
@@ -12,7 +13,7 @@
 
 <%= link_to "See the Bears", bears_path() %>
 <% else %>
-<h1> Ted's Battle Bear Listings:</h1>
+<h1 class="jumbotron"> Ted's Battle Bear Listings:</h1>
 <h6>*all prices are in USD*</h6>
 <% if @bears.any? %>
 <% @bears.each do |bear| %>
