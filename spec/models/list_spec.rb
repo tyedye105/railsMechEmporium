@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-describe Bear do
+describe List do
   it { should validate_presence_of :name }
 end
