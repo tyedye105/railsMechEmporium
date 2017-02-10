@@ -16,13 +16,16 @@
 <h6>*all prices are in USD*</h6>
 <% if @bears.any? %>
 <% @bears.each do |bear| %>
-<%= bear.name %>
-<%= bear.country %>
-<%= bear.cost %>
+<div class ='well'>
+  <h2> Name: <%= link_to bear.name, bear_path(bear) %> </h2>
+  <h3> Country of Origin: <%= bear.country %></h3>
+  <h3> Price: $<%= bear.cost %></h3>
+</div>
 <% end %>
 <% else %>
 <p> Currently no bears in stock.</p>
 <% end %>
 <br>
 <%= link_to "Main Page", "/" %>
+<%= link_to "Add A Bear", new_bear_path %>
 <% end %>

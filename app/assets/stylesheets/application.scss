@@ -14,6 +14,19 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+h1 {
+  text-align: center;
+}
+
 .jumbotron {
   text-align: center;
+}
+
+.form-well {
+  text-align: center;
+}
+
+.btn.btn-success {
+  margin-top: 10px;
+  margin-left: 44%;
 }

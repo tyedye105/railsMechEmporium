@@ -1,0 +1,27 @@
+<%= render "layouts/errors", :object => @bear %>
+<div class="well">
+   <%= form_for @bear do |f| %>
+   <div class="from-group">
+   <%= f.label :name %>
+   <%= f.text_field :name, class: "form-control" %>
+    </div>
+       <div class="from-group">
+   <%= f.label :cost, "in USD"%>
+   <%= f.text_field :cost, class: "form-control" %>
+    </div>
+       <div class="from-group">
+   <%= f.label :country %>
+   <%= f.text_field :country, class: "form-control" %>
+    </div>
+       <div class="from-group">
+   <%= f.label :forte %>
+   <%= f.text_field :forte, class: "form-control" %>
+    </div>
+       <div class="from-group">
+   <%= f.label :description %>
+   <%= f.text_area :description, class: "form-control" %>
+    </div>
+   <%= f.submit class: "btn btn-success" %>
+   <% end %>
+ </div>
+</div>
