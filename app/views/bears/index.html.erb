@@ -11,7 +11,7 @@
 <br>
 
 
-<%= link_to "See the Bears", bears_path() %>
+<%= link_to "See the Bears", bears_path(), class: "btn btn-info"%>
 <% else %>
 <h1 class="jumbotron"> Ted's Battle Bear Listings:</h1>
 <h6>*all prices are in USD*</h6>
@@ -27,6 +27,12 @@
 <p> Currently no bears in stock.</p>
 <% end %>
 <br>
-<%= link_to "Main Page", "/" %>
-<%= link_to "Add A Bear", new_bear_path %>
+<div class="row">
+  <div class="col-xs-6">
+    <%= link_to "Main Page", "/", class: "btn btn-info" %>
+  </div>
+  <div class="col-xs-6">
+    <%= link_to "Add A Bear", new_bear_path, class: "btn btn-success" %>
+  </div>
+</div>
 <% end %>

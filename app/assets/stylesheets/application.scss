@@ -15,6 +15,7 @@
 @import "bootstrap";
 
 h1 {
+  margin-top: 8%;
   text-align: center;
 }
 
@@ -26,7 +27,12 @@ h1 {
   text-align: center;
 }
 
-.btn.btn-success {
+.btn.btn-success.sub-btn{
+
   margin-top: 10px;
   margin-left: 44%;
+}
+
+.btn {
+  margin-bottom: 15px;
 }

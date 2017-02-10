@@ -1,18 +1,21 @@
-<h1>Details for: <%= @bear.name %> </h1>
+<h1 class="jumbotron">Details for: <%= @bear.name %> </h1>
 <div class="well">
   <h3>Name:<%= @bear.name %> </h3>
   <h3>Cost: $<%= @bear.cost %></h3>
   <h3>Country of Origin: <%= @bear.country %></h3>
   <h3>Specialty: <%= @bear.forte %></h3>
   <h3>Description:</h3>
-  <p><%= @bear.description %></P
+  <p><%= @bear.description %></P>
 </div>
 
 
-<%= link_to "Add A Bear", new_bear_path %>
-<%=link_to "Edit A Bear", edit_bear_path(@bear) %>
-<%=link_to "Delete this Bear", bear_path(@bear),
-                                :data => {:confirm => "Are you sure?",
-                                          :method => "delete"} %>
 
-<%= link_to "Back to All Bears", bears_path() %>
+
+
+    <%= link_to "Edit A Bear", edit_bear_path(@bear), class: "btn btn-success" %>
+
+    <%=link_to "Delete this Bear", bear_path(@bear), class: "btn btn-danger",
+                                    :data => {:confirm => "Are you sure?",
+                                              :method => "delete"} %>
+    <%= link_to "Back to All Bears", bears_path(), class: "btn btn-info" %>
+    <%= link_to "Main Page", "/", class: "btn btn-primary" %>
