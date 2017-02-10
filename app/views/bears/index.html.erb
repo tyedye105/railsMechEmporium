@@ -1,14 +1,19 @@
-<h1>Ted's Battle Bear Emporium</h1>
+<h1 class='jumbotron'>Ted's Battle Bear Emporium</h1>
 
 
 <% if current_page?('/')%>
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<h2>Welcome to a terrfiying new age</h2>
+<p>When people people first dreamt of war in the far flung future, they probably imagined it being like those of walking tanks of distruction in seen in the fictional BattleTech world, or perhaps more like the mobile suits, from every Mecha Anime in existence.  But instead of that, we got these crazy bear-like machines called Battle Bears.(We blame the Russians)</p>
 
+<h2>Our Mission</h2>
+ <p> Here at Ted's Battle Bear Emporium, we run an online marketlpace were people can buy and sell thier ursine machines of destruction.  We are an international outfit, so we are able to get our hands on all various makes and models from across the world!(Whats left of it at least.) Click below to view what we currently have in our inventory!</p>
 <br>
+
+
 <%= link_to "See the Bears", bears_path() %>
 <% else %>
+<h1> Ted's Battle Bear Listings:</h1>
+<h6>*all prices are in USD*</h6>
 <% if @bears.any? %>
 <% @bears.each do |bear| %>
 <%= bear.name %>
