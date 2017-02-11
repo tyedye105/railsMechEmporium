@@ -8,13 +8,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <nav class="navbar navbar-default navbar-fixed-top">
      <%=link_to "Ted's Battle Bear Emporium","/", class: "navbar-brand" %>
+     <ul class="navbar navbar-nav">
+     <h4><%= flash[:alert] %></h4>
+     <h4><%= flash[:notice] %></h4>
+     <ul>
     </nav>
   </head>
 
   <body>
     <div class="container">
-    <%= flash[:alert] %>
-    <%= flash[:notice] %>
       <%= yield %>
     </div>
   </body>
