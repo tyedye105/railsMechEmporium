@@ -1,24 +1,29 @@
-# README
+# _Ted's Battle Bear Emporium_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### By *Marty Kovach* 02/10/2017
 
-Things you may want to cover:
 
-* Ruby version
+## Description
+  Ted's Battle Bear Emporium, is your one stop shop for giant mechanized bears. Features the ability to create, edit, and remove bears as necessary.
 
-* System dependencies
+## Setup/Installation Requirements
 
-* Configuration
+* Clone this repo: railsMechEmporium
+* Start Postgres
+* In The terminal: $rails db:create
+* In The terminal: $rails db:migrate
+* In The terminal: $rails s
+* Go to localhost:3000, and check out the app!
 
-* Database creation
+###Known bugs
+  the styling.
 
-* Database initialization
+## Technologies Used
 
-* How to run the test suite
+_hmtl, css, Ruby, Rails
 
-* Services (job queues, cache servers, search engines, etc.)
+### License
 
-* Deployment instructions
+*MIT License*
 
-* ...
+Copyright (c) 2017 **_Marty Kovach_**
